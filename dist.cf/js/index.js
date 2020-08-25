@@ -1,0 +1,1 @@
+for(var btns=document.getElementsByTagName("button"),z=0,LBbox=document.getElementsByClassName("LBbox")[0],i=0;i<btns.length;i++)btns[i].onclick=function(){"&gt;"==this.innerHTML?calc(1):calc(-1)};function calc(t,n){t&&(5==(z+=t)&&(z=0),-1==z&&(z=4)),LBbox.style.marginLeft=100*-z+"%"}setInterval(function(){calc(1)},2e3);
